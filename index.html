@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/scripts/game.js"></script>
+</head>
+<body>
+    <header>
+        <h1>JOGO DE ADIVINHAÇÃO</h1>
+    </header>
+    
+    <main>
+        <section class="instrucoes">
+            <p>
+            O Jogo de Adivinhação consiste em "chutar" um valor especifico entre 1 e 100 para tentar adivinhar o numero que o computador vai escolher. Borá joga ?
+            </p>
+        </section>
+
+
+        <section class="game">
+            <h3>Escolha um número:</h3>
+            <input type="number" id="chute" placeholder="Digite seu chute" min="1" max="100">
+            <button id="botaoChute">Enviar</button>
+            <p id="mensagem"></p>
+            <p id="tentativasRestantes"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Pedro Kinor Dev.</p>
+    </footer>
+</body>
+</html>
