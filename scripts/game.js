@@ -15,7 +15,7 @@ botao.addEventListener("click", () => {
   const palpite = parseInt(input.value); // Corrigido "paseInt" → "parseInt"
 
   if (isNaN(palpite) || palpite < 1 || palpite > 100) { // Corrigido "isNan" → "isNaN"
-    mensagem.textContent = "Por favor, insira um número entre 1 e 100.";
+    mensagem.textContent = "🛑Por favor, insira um número entre 1 e 100.🛑";
     return;
   }
 
@@ -28,9 +28,9 @@ botao.addEventListener("click", () => {
     mensagem.textContent = `❌ Você perdeu! O número secreto era ${numeroSecreto} ❌`;
     jogoEncerrado = true;
   } else if (palpite < numeroSecreto) {
-    mensagem.textContent = "O número secreto é maior.";
+    mensagem.textContent = "➕O número secreto é maior.➕";
   } else {
-    mensagem.textContent = "O número secreto é menor.";
+    mensagem.textContent = "➖O número secreto é menor.➖";
   }
 
   tentativasTexto.textContent = `Tentativas restantes: ${tentativasRestantes}`;
