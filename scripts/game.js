@@ -1,5 +1,5 @@
 const numeroSecreto = Math.floor(Math.random() * 100) + 1;
-let tentativasRestantes = 15;
+let tentativasRestantes = 10;
 let jogoEncerrado = false;
 
 const input = document.getElementById("chute");
